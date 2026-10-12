@@ -344,17 +344,18 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
             <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Full Name *</label>
-            <input type="text" id="fullName" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500">
+            <input type="text" id="fullName" placeholder="Enter your full name" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500">
           </div>
           <div>
             <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Email Address *</label>
-            <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500">
+            <input type="email" id="email" placeholder="Enter your email" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500">
           </div>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
             <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Department</label>
             <select id="department" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500">
+              <option value="select">--select department--</option>
               <option value="General Inquiry">General Inquiry</option>
               <option value="Recruitment">Recruitment & Onboarding</option>
               <option value="Technical">Technical & Web Ops</option>
@@ -362,12 +363,12 @@
           </div>
           <div>
             <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Subject *</label>
-            <input type="text" id="subject" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500">
+            <input type="text" id="subject" placeholder="enter subject" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500">
           </div>
         </div>
         <div>
           <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Message *</label>
-          <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500 resize-none"></textarea>
+          <textarea id="message" rows="4" placeholder="write your query here" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500 resize-none"></textarea>
         </div>
         <div class="text-center">
           <button type="submit" id="submitBtn" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-600/30 transition">Submit Inquiry</button>
