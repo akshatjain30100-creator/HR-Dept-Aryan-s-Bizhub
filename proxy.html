@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aryan's BizHub - Student Attendance System</title>
+   <!-- Favicon Photo / Logo in Head -->
+  <link rel="icon" type="image/png" href="bizhr.png">
     <style>
         :root {
             --bg-color: #0f172a;
@@ -206,7 +208,7 @@
                     <tr>
                         <th>#</th>
                         <th>Student Name</th>
-                        <th>Department</th>
+                        <th>Course</th>
                         <th>Status</th>
                         <th>Remarks</th>
                     </tr>
@@ -267,7 +269,7 @@
             row.innerHTML = `
                 <td>${index + 1}</td>
                 <td><strong>${student.name}</strong></td>
-                <td>${student.department}</td>
+                <td>${student.department || student.course || 'N/A'}</td>
                 <td>
                     <div class="status-options">
                         <label class="status-label present">
@@ -305,7 +307,7 @@
             const remarkVal = document.querySelector(`input[name="remarks-${index}"]`).value;
             return {
                 name: student.name,
-                department: student.department,
+                department: student.department || student.course || '',
                 status: statusVal,
                 remarks: remarkVal
             };
