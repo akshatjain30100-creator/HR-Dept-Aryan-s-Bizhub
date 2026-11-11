@@ -208,7 +208,7 @@
         <tr>
           <th>#</th>
           <th>Student Name</th>
-          <th>Course</th>
+          <th>Department</th>
           <th>Status</th>
           <th>Remarks</th>
         </tr>
@@ -269,7 +269,7 @@
       row.innerHTML = `
                 <td>${index + 1}</td>
                 <td><strong>${student.name}</strong></td>
-                <td>${student.Course}</td>
+                <td>${student.Department}</td>
                 <td>
                     <div class="status-options">
                         <label class="status-label present">
@@ -307,7 +307,7 @@
       const remarkVal = document.querySelector(`input[name="remarks-${index}"]`).value;
       return {
         name: student.name,
-        Course: student.Course,
+        Department: student.Department,
         status: statusVal,
         remarks: remarkVal
       };
